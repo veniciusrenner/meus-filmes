@@ -8,7 +8,7 @@ const options = {
 
 
 
-fetch('https://api.themoviedb.org/3/authentication')
+fetch('https://api.themoviedb.org/3/movie/changes?page=1', options)
     .then(response => response.json())
     .then(data =>{
         console.log(data);
